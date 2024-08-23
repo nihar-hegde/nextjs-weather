@@ -29,7 +29,7 @@ const WeatherPage = ({ params }: { params: { id: string } }) => {
         setBgColor("from-orange-400 to-red-500");
       }
     }
-  }, [data?.temperature]);
+  }, [data, data?.temperature]);
 
   const formatValue = (value: number | null, unit: string) => {
     return value !== null ? `${value.toFixed(1)}${unit}` : "N/A";
