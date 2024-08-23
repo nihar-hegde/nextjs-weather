@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col h-full`}>
+      <body className={`${inter.className} flex flex-col h-full w-full`}>
         <ReduxProvider>
           <Navbar />
           <main className="flex-grow flex items-center justify-center">
